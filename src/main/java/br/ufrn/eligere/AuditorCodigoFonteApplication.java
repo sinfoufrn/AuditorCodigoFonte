@@ -73,7 +73,7 @@ public class AuditorCodigoFonteApplication implements CommandLineRunner {
 		JLabel infoLabel = new JLabel(
 				"<html> " +
 						" <div style=\"text-align : center; width: 100%;\"> " +
-						"Selecione os Arquivos com o Código Auditável da Aplicação e informe a data em que o hash foi gerado, para validar o HASH. " +
+						" Informe o Hash e Data de Geração Mostrados Durante a Eleição, Selecione os Arquivos com o Código Auditável da Aplicação e Clique em \"Verificar\" " +
 						" </div> " +
 						"</html>");
 		JPanel centerPanel = new JPanel(layout);
@@ -89,7 +89,7 @@ public class AuditorCodigoFonteApplication implements CommandLineRunner {
 		mainPanel.add(scrollOutPut, BorderLayout.SOUTH);
 
 
-		JLabel hashLabel = new JLabel("Hash: ");
+		JLabel hashLabel = new JLabel("Hash Informado: ");
 		JTextField hashField = new JTextField();
 
 		JLabel dateLabel = new JLabel("Data de Geração do Hash: ");
